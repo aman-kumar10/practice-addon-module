@@ -1,0 +1,37 @@
+.clientslogged-header {
+    background: transparent;
+    margin: 0px;
+    padding: 15px 2%;
+    width: 100%;
+    margin-bottom: 23px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 10px #0000002b;
+}
+ul.tabs-list {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    padding-left: 0;
+    margin-bottom: 0px;
+}
+ul.tabs-list li.header-tab{
+    margin: 0 6px;
+    padding: 0px;
+    float: left;
+    line-height: 48px;
+    list-style: none;
+}
+.clientslogged-header li.header-tab a.active {
+    background: #1a4d80;
+    color: #fff;
+}
+.clientslogged-header li.header-tab a {
+    display: block;
+    border-radius: 4px;
+    font-size: 14px;
+    margin: 0;
+    padding: 0 21px;
+    text-decoration: none;
+}

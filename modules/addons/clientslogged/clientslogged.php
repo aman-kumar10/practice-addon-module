@@ -41,9 +41,10 @@ function clientslogged_activate() {
                 $table->increments('id');
                 $table->integer('clientid');
                 $table->string('email');
-                $table->dateTime('login_time')->nullable();
-                $table->dateTime('logout_time')->nullable();
-                $table->time('time_spend')->nullable();
+                $table->string('ip_address')->nullable();
+                $table->string('login_time')->nullable();
+                $table->string('logout_time')->nullable();
+                $table->string('time_spend')->nullable();
                 $table->string('current_status');
             });
         }
@@ -53,10 +54,10 @@ function clientslogged_activate() {
             Capsule::schema()->create('mod_login_attempts', function ($table) {
                 $table->increments('id');
                 $table->string('email');
-                $table->integer('clientid');
                 $table->integer('attempts')->default(1);
-                $table->dateTime('last_attempt');
                 $table->string('ip_address')->nullable();
+                $table->string('last_attempt');
+                $table->string('status');
             });
         }
 

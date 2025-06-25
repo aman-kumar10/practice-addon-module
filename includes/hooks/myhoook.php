@@ -1,12 +1,13 @@
 <?php
 
+if(!defined("WHMCS")) {
+    die("This file cannot be accesed directly!");
+}
 
-add_hook('ClientLoginShare', 1, function($vars) {
-    echo "<pre>"; print_r($vars); die;
-});
+// add_hook('ClientLoginShare', 1, function($vars) {
+//     echo "<pre>"; print_r($vars); die;
+// });
 
-// Array
-// (
-//     [username] => admin@jdg.j
-//     [password] => cri#69CrE7aB
-// )
+// add_hook('UserLogin', 1, function($vars) {
+//     echo "<pre>"; print_r($vars); die;
+// });
